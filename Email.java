@@ -14,7 +14,7 @@ public class Email {
         };
 
         // Regex pattern for email validation
-        String emailPattern = "^[\\w._%+-]+@[\\w.-]+\\.[a-zA-Z]{2,}$";
+        String emailPattern = "^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,6}$";
 
         // Compile the regex pattern
         Pattern pattern = Pattern.compile(emailPattern);
